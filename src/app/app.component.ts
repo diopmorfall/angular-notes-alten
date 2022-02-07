@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html'
+  templateUrl: './app.component.html',
 })
-export class AppComponent { }
-
+export class AppComponent {}
+// for each component we'd set its behavior; here I don't specify anything
 
 /*
 Copyright Google LLC. All Rights Reserved.
