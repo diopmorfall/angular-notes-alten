@@ -1,12 +1,11 @@
 import { Injectable } from '@angular/core';
-
-@Injectable({providedIn: 'root'})
+// injectable since it'll be included in another function, becoming its dependency
+@Injectable({ providedIn: 'root' })
 export class Logger {
   writeCount(count: number) {
     console.warn(count);
   }
 }
-
 
 /*
 Copyright Google LLC. All Rights Reserved.
