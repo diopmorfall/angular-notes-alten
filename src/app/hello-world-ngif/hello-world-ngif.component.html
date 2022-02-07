@@ -2,16 +2,18 @@
 
 <button type="button" (click)="onEditClick()">Make text editable!</button>
 
+<!--
+    A directive (like *ngFor) that allows to dynamically change the dom structure; I can handle its behavior in the other file, this way I can separate the presentation and the logic
+-->
 <div *ngIf="canEdit; else noEdit">
-    <p>You can edit the following paragraph.</p>
+  <p>You can edit the following paragraph.</p>
 </div>
 
 <ng-template #noEdit>
-    <p>The following paragraph is read only. Try clicking the button!</p>
+  <p>The following paragraph is read only. Try clicking the button!</p>
 </ng-template>
 
 <p [contentEditable]="canEdit">{{ message }}</p>
-
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.

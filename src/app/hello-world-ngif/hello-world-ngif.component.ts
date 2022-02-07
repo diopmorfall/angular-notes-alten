@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+// this allows to create components
 
 @Component({
   selector: 'hello-world-ngif',
-  templateUrl: './hello-world-ngif.component.html'
+  templateUrl: './hello-world-ngif.component.html',
 })
 export class HelloWorldNgIfComponent {
   message = "I'm read only!";
@@ -11,14 +12,12 @@ export class HelloWorldNgIfComponent {
   onEditClick() {
     this.canEdit = !this.canEdit;
     if (this.canEdit) {
-      this.message = 'You can edit me!';
+      this.message = 'You can change me!';
     } else {
-      this.message = "I'm read only!";
+      this.message = "I'm immutable!";
     }
   }
 }
-
-
 
 /*
 Copyright Google LLC. All Rights Reserved.
